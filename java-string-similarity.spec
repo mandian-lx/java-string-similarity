@@ -9,6 +9,7 @@ Source0:	https://github.com/tdebatty/%{name}/archive/v%{version}/%{name}-%{versi
 BuildArch:	noarch
 
 BuildRequires:	maven-local
+BuildRequires:	mvn(net.jcip:jcip-annotations)
 BuildRequires:	mvn(junit:junit)
 
 Requires:	java-headless
