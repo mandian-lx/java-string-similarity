@@ -10,11 +10,12 @@ Url:		http://debatty.info/software/java-string-similarity
 Source0:	https://github.com/tdebatty/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 
-BuildRequires:  maven-local
-BuildRequires:  mvn(junit:junit)
-BuildRequires:  mvn(org.apache.felix:maven-bundle-plugin)
-BuildRequires:  mvn(org.apache.maven.plugins:maven-release-plugin)
-BuildRequires:  mvn(org.apache.maven.plugins:maven-source-plugin)
+BuildRequires:	maven-local
+BuildRequires:	mvn(junit:junit)
+BuildRequires:	mvn(net.jcip:jcip-annotations)
+BuildRequires:	mvn(org.apache.felix:maven-bundle-plugin)
+BuildRequires:	mvn(org.apache.maven.plugins:maven-release-plugin)
+BuildRequires:	mvn(org.apache.maven.plugins:maven-source-plugin)
 
 %description
 A library implementing different string similarity and distance measures. A
