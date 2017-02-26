@@ -1,3 +1,5 @@
+%{?_javapackages_macros:%_javapackages_macros}
+
 Summary:	Implementation of various string similarity and distance algorithms for Java
 Name:		java-string-similarity
 Version:	0.21
@@ -8,12 +10,11 @@ Url:		http://debatty.info/software/java-string-similarity
 Source0:	https://github.com/tdebatty/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 
-BuildRequires:	maven-local
-BuildRequires:	mvn(net.jcip:jcip-annotations)
-BuildRequires:	mvn(junit:junit)
-
-Requires:	java-headless
-Requires:	jpackage-utils
+BuildRequires:  maven-local
+BuildRequires:  mvn(junit:junit)
+BuildRequires:  mvn(org.apache.felix:maven-bundle-plugin)
+BuildRequires:  mvn(org.apache.maven.plugins:maven-release-plugin)
+BuildRequires:  mvn(org.apache.maven.plugins:maven-source-plugin)
 
 %description
 A library implementing different string similarity and distance measures. A
